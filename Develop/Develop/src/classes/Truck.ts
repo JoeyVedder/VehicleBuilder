@@ -30,10 +30,7 @@ class Truck extends Vehicle implements AbleToTow {
     weight: number,
     topSpeed: number,
     towingCapacity: number,
-    frontLeftWheel: Wheel,
-    frontRightWheel: Wheel,
-    rearLeftWheel: Wheel,
-    rearRightWheel: Wheel
+    wheels: Wheel[]
   ) {
     // TODO: The constructor should call the constructor of the parent class, Vehicle ----------Done
     super();
@@ -48,14 +45,10 @@ class Truck extends Vehicle implements AbleToTow {
     this.towingCapacity = towingCapacity;
     // TODO: The constructor should initialize the properties of the Truck class -----------Done
     // TODO: The constructor should check if the wheels array has 4 elements and create 4 new default Wheel objects if it does not --------------Done
-    this.wheels = [frontLeftWheel, frontRightWheel, rearLeftWheel, rearRightWheel];
-    if (this.wheels.length !== 4) {
-      this.wheels = [
-        new Wheel('Default Brand', 0),
-        new Wheel('Default Brand', 0),
-        new Wheel('Default Brand', 0),
-        new Wheel('Default Brand', 0)
-      ];
+    if (wheels.length != 4) {
+      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+    } else {
+      this.wheels = wheels;
     }
   }
 
@@ -74,7 +67,7 @@ class Truck extends Vehicle implements AbleToTow {
   }
 
   // TODO: Override the printDetails method from the Vehicle class
-  printDetails(): void {
+   override printDetails(): void {
     // TODO: The method should call the printDetails method of the parent class
     super.printDetails();
     // TODO: The method should log the details of the Truck
@@ -89,7 +82,7 @@ class Truck extends Vehicle implements AbleToTow {
     console.log(`Towing Capacity: ${this.towingCapacity} lbs`);
     console.log('Wheels:');
     this.wheels.forEach((wheel, index) => {
-      console.log(`  Wheel ${index + 1}: Brand - ${wheel.brand}, Diameter - ${wheel.diameter} inches`);
+      console.log(`  Wheel ${index + 1}: Brand - ${wheel.getTireBrand}, Diameter - ${wheel.getDiameter} inches`);
     });
   }
 }

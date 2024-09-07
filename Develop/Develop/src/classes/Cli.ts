@@ -38,7 +38,7 @@ class Cli {
           message: 'Select a vehicle to perform an action on',
           choices: this.vehicles.map((vehicle) => {
             return {
-              name: `${vehicle.vin} -- ${vehicle.make} ${vehicle.model}`,
+              name: '${vehicle.vin} -- ${vehicle.make} ${vehicle.model}',
               value: vehicle.vin,
             };
           }),
