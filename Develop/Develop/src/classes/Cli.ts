@@ -235,13 +235,13 @@ class Cli {
         },
         {
           type: 'input',
-          name: 'frontWheelBrand',
-          message: 'Enter Front Wheel Brand',
+          name: 'rearWheelDiameter',
+          message: 'Enter Rear Wheel Diameter',
         },
         {
           type: 'input',
-          name: 'rearWheelDiameter',
-          message: 'Enter Rear Wheel Diameter',
+          name: 'frontWheelBrand',
+          message: 'Enter Front Wheel Brand',
         },
         {
           type: 'input',
