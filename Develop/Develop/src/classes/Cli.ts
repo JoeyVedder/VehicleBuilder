@@ -1,3 +1,4 @@
+//I hope i see this 
 // importing classes from other files
 import inquirer from "inquirer";
 import Truck from "./Truck.js";
@@ -38,7 +39,7 @@ class Cli {
           message: 'Select a vehicle to perform an action on',
           choices: this.vehicles.map((vehicle) => {
             return {
-              name: '${vehicle.vin} -- ${vehicle.make} ${vehicle.model}',
+              name: `${vehicle.vin} -- ${vehicle.make} ${vehicle.model}`,
               value: vehicle.vin,
             };
           }),
@@ -182,7 +183,8 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          parseInt(answers.towingCapacity)
+          parseInt(answers.towingCapacity),
+          []
         );
         this.vehicles.push(truck);
         this.selectedVehicleVin = truck.vin;
@@ -258,8 +260,7 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          new Wheel(answers.frontWheelBrand, parseInt(answers.frontWheelDiameter)),
-          new Wheel(answers.rearWheelBrand, parseInt(answers.rearWheelDiameter))
+          []
         );
         this.vehicles.push(motorbike);
         this.selectedVehicleVin = motorbike.vin;
@@ -398,7 +399,7 @@ class Cli {
         } else if (answers.action === 'Wheelie') {
           const selectedMotorbike = this.vehicles.find(vehicle => vehicle.vin === this.selectedVehicleVin) as Motorbike;
           if (selectedMotorbike) {
-            selectedMotorbike.wheelie();
+            (selectedMotorbike as Motorbike).wheelie();
           }
         }
 
