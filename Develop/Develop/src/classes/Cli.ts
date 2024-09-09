@@ -1,4 +1,3 @@
-//I hope i see this 
 // importing classes from other files
 import inquirer from "inquirer";
 import Truck from "./Truck.js";
