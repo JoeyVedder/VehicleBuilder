@@ -25,7 +25,7 @@ When the folder is open in the terminal and you already typed "npm i" you have t
 
 
 ## License
-This project is licensed under the MIT. Click [here](https://github.com/JoeyVedder/VehicleBuilder?tab=MIT-1-ov-file) to view the license
+This project is licensed under the MIT. Click [here](LICENSE) to view the license
 
 
 
