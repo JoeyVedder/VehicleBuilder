@@ -1,25 +1,34 @@
-Vehicle Builder
-A TypeScript project for creating and managing different vehicle types with functionalities like adjusting speed and getting towed.
+# Vehicle Builder
+  
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+## Table of Contents
 
-Features
-Vehicle Types: Car, Truck, and Motorbike.
-Actions:
-Add 5 speed.
-Decrease 5 speed.
-Get towed.
-Installation
-Clone the repository using your preferred Git tool.
-
-Install dependencies using a package manager like npm.
-
-Walkthrough
-For a detailed walkthrough of how to set up and use the Vehicle Builder, check out the following link:
-
-Walkthrough Link
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+- [License](#license)
 
 
-Contributing
-Contributions are welcome. Feel free to open an issue or submit a pull request for improvements.
+## Description
+This project will allow users to build their own or pick one of the already existing vehicles to do multiple features for that vehicle, Accelerate, Decelerate, Tow, Reverse, Start, and Wheelie (only for motorbikes).
 
-License
-This project is licensed under the MIT License.
+## Installation
+
+First thing you're going to want to do is make sure you have Node.js installed, after thats installed you're going to want to click the code button and download the zip file. Extract the zip and open the folder in your terminal type "cd Develop" twice to get to the specific folder and type "npm i".
+
+## Usage
+
+When the folder is open in the terminal and you already typed "npm i" you have to type "npm run start" then it will open the program and then you can start answering the questions and build your vehicle!!
+
+
+
+## License
+This project is licensed under the MIT.
+
+
+
+## Questions
+If you have any questions, reach out to me here:
+- Email: qilotog1@gmail.com
+- GitHub: [JoeyVedder](https://github.com/JoeyVedder)
