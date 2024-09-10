@@ -15,7 +15,8 @@ This project will allow users to build their own or pick one of the already exis
 
 ## Installation
 
-First thing you're going to want to do is make sure you have Node.js installed, after thats installed you're going to want to click the code button and download the zip file. Extract the zip and open the folder in your terminal type "cd Develop" twice to get to the specific folder and type "npm i".
+First thing you're going to want to do is make sure you have Node.js installed, after thats installed you're going to want to click the code button and download the zip file. Extract the zip and open the folder in your terminal type "cd Develop" twice to get to the specific folder and type "npm i". If you need a walkthrough on how to install and use the program just click [Me!](https://www.youtube.com/watch?v=AttNIxsF5dc)
+
 
 ## Usage
 
